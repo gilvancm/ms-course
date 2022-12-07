@@ -15,6 +15,7 @@ import com.devsuperior.hrpayroll.services.PaymentService;
 //criamos um endpoint
 	//rota é o complemento do caminho e parametro {workerId} e {days}
 
+//o caminho /payments
 @RestController
 @RequestMapping(value = "/payments")
 public class PaymentResource {
@@ -22,6 +23,7 @@ public class PaymentResource {
 	@Autowired
 	private PaymentService service;
 	
+	//end pointe e a Rota /{workerId}/days/{days} e o parametro {workerId} e {days}
 	@GetMapping(value = "/{workerId}/days/{days}")
 	public ResponseEntity<Payment> getPayment(@PathVariable Long workerId, @PathVariable Integer days) {
 		Payment payment = service.getPayment(workerId, days);
