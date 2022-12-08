@@ -8,9 +8,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.devsuperior.hrpayroll.entities.Worker;
 
+//@FeignClient(name = "hr-worker", url = "localhost:8001", path = "/workers")
 //coloquei o nome do prjeto, e hadcode o endereço e o caminho
 @Component
-@FeignClient(name = "hr-worker", url = "localhost:8001", path = "/workers")
+@FeignClient(name = "hr-worker", path = "/workers")
 public interface WorkerFeignClient {
 	
 	//vou trazer a assinatura do resource do Worker
