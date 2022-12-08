@@ -68,6 +68,8 @@ Porta padrão: 8761
 Acessar o dashboard no navegador: http://localhost:8761
 
 ### 2.3 Configurar clientes Eureka
+todo client deve saber onde tá o servidor eureka para poder registra o client
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka
 
 Eliminar o Ribbon de hr-payroll:
 - Dependência Maven
