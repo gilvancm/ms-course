@@ -38,6 +38,27 @@ public class WorkerResource {
 	// EndPoint 2
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Worker> findById(@PathVariable Long id) {
+		// 1 - simular um erro aqui no endpoint vou fazer umagabiarra e testar com uma exceção
+		/*
+		int x = 1;
+		if(x == 1)
+		      throw new RuntimeException("teste");
+		*/
+		// 2 - simulaçao testando com 3 milisegundos
+		//vai estourar o timeoutdo Ribbon, o tempo do balenceamento de carga é 1000L e ai não  faz a chamada ai cai
+		//sempre vai estourar o timeout
+		// se tiver na propriedade do hr-payrooll da certo os 3000L
+		/*
+		 //testando o tempo
+		try {
+			Thread.sleep(3000L); //3 segundo  e o tempo padrão do ribbon é 1 segundo 
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		*/
+		
 		//mostra inormação e a porta que tá acessando
 		logger.info("PORT = " + env.getProperty("local.server.port"));
 		

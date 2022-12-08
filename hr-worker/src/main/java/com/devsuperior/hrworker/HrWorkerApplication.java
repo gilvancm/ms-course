@@ -11,7 +11,7 @@ public class HrWorkerApplication {
 		SpringApplication.run(HrWorkerApplication.class, args);
 	}
 
-	/* anotação acresentei na dependencia Spring Data JPA, H2 Database, Spring Web, EurekaClient
+	/* anotação acresentei na dependencia Spring Data JPA, H2 Database, Spring Web, EurekaClient é (Eureka Discovery Client)
 	*/
 	
 }

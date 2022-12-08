@@ -59,6 +59,17 @@ Run configuration
 ```
 # Fase 2: Eureka, Hystrix, Zuul
 
+-------------------------------------------------------------------
+<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-hystrix -->
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+    <version>2.2.10.RELEASE</version>
+</dependency>
+
+
+-----------------------------------------------------------------
+
 ### 2.1 Criar projeto hr-eureka-server
 
 ### 2.2 Configurar hr-eureka-server
