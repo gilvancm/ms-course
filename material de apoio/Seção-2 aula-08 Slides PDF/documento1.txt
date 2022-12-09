@@ -67,6 +67,13 @@ Run configuration
     <version>2.2.10.RELEASE</version>
 </dependency>
 
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>
+				spring-cloud-starter-netflix-hystrix
+			</artifactId>
+		</dependency>
+
 
 -----------------------------------------------------------------
 
@@ -111,10 +118,18 @@ ribbon.ConnectTimeout=10000
 ribbon.ReadTimeout=20000
 ```
 
+Gateway é portal zuul é o nome
 ### 2.7 Criar projeto hr-zuul-server
 
 ### 2.8 Configurar hr-zuul-server
+--------------------------------------------------------------------------------
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+    <version>2.2.0.RELEASE</version>
+</dependency>
 
+----------------------------------------------------------------------
 Porta padrão: 8765
 
 ### 2.9 Random port para hr-payroll
