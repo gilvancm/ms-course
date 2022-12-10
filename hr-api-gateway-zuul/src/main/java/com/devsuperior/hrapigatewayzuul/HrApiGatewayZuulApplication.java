@@ -5,6 +5,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
+/*dependencia
+Spring Web
+Spring Clound Discovery - Eureka Discovery Client
+Spring Clound Routing - Zuul[Maintenance]
+*/
+
 @EnableEurekaClient
 @EnableZuulProxy
 @SpringBootApplication
